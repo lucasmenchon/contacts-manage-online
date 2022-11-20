@@ -1,0 +1,14 @@
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/ContactsManage
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/appsettings.Development.json
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/appsettings.json
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/ContactsManage.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/ContactsManage.runtimeconfig.json
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/ContactsManage.pdb
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Microsoft.EntityFrameworkCore.Relational.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Microsoft.Extensions.Caching.Memory.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/MySqlConnector.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Newtonsoft.Json.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/Pomelo.EntityFrameworkCore.MySql.dll
+/var/www/contacts-manage-project/bin/Release/net6.0/publish/ContactsManage.deps.json

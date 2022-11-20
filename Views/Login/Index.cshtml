@@ -1,0 +1,61 @@
+﻿@model LoginModel
+@{
+    Layout = "_LayoutLogout";
+    ViewData["Title"] = "Login";
+}
+
+<div id="LoginApp" class="container d-flex justify-content-center">
+    <div class="col-4">
+        <form asp-controller="Login" asp-action="Entrar" method="post">
+            <div class="mb-3">
+                <label for="login" class="form-label">Email - Login</label>
+                <input type="text" class="form-control" id="login" asp-for="Login" />
+                @Html.ValidationMessageFor(user => user.Login)
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" asp-for="Senha" />
+                @Html.ValidationMessageFor(user => user.Senha)
+            </div>
+            <p class="mb-3 text-sm mx-auto"><a asp-action="RedefinePassword" asp-controller="Login" class="text-primary text-muted">Esqueceu a senha?</a></p>
+               
+            <button type="submit" class="btn btn-primary">Entrar</button>
+
+            @if (TempData["MsgSuccess"] != null)
+            {
+                <div class="small mt-1 alert alert-success col-auto text-center" role="alert" v-show="alertDiv">
+                    @TempData["MsgSuccess"]
+                    <button type="button" class="btn btn-sm btn-danger btn-close rounded-circle p-1" aria-label="Close" @@click="closeAlert"></button>
+                </div>
+            }
+
+            @if (TempData["MsgError"] != null)
+            {
+                <div class="small mt-1 alert alert-danger col-auto text-center" role="alert" v-show="alertDiv">
+                    @TempData["MsgError"]
+                    <button type="button" class="btn btn-sm btn-danger btn-close rounded-circle p-1" aria-label="Close" @@click="closeAlert"></button>
+                </div>
+            }
+
+        </form>
+    </div>
+</div>
+<script src="https://unpkg.com/vue@3.2.41/dist/vue.global.js"></script>
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                alertDiv: true,
+            }
+        },
+        methods: {
+
+            closeAlert: function () {
+                this.alertDiv = false;
+            },
+
+        },
+    }).mount('#LoginApp')
+</script>
