@@ -785,7 +785,7 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/ubuntu/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -793,11 +793,11 @@
       "projectUniqueName": "/var/www/contacts-manage-project/ContactsManage.csproj",
       "projectName": "ContactsManage",
       "projectPath": "/var/www/contacts-manage-project/ContactsManage.csproj",
-      "packagesPath": "/root/.nuget/packages/",
+      "packagesPath": "/home/ubuntu/.nuget/packages/",
       "outputPath": "/var/www/contacts-manage-project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/ubuntu/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
