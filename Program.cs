@@ -24,8 +24,6 @@ builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddScoped<ISessao, Sessao>();
 builder.Services.AddScoped<IEmail, EmailModel>();
 
-builder.WebHost.Start();
-
 var app = builder.Build();
 //builder.Services.AddEntityFrameworkMySql().AddDbContext<BancoContext>();
 // Configure the HTTP request pipeline.
